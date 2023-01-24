@@ -46,7 +46,8 @@ body {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
-.navigation ul li:hover {
+.navigation ul li:hover,
+.navigation ul li.hovered {
     background: var(--white);
 }
 .navigation ul li:nth-child(1) {
@@ -62,7 +63,8 @@ body {
     text-decoration: none;
     color: var(--white);
 }
-.navigation ul li:hover a {
+.navigation ul li:hover a,
+.navigation ul li.hovered a {
     color: var(--blue);
 }
 .navigation ul li a .icon {
@@ -83,7 +85,9 @@ body {
 }
 /* navigation - curve outside the item */
 .navigation ul li:hover a::before,
-.navigation ul li:hover a::after {
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::before,
+.navigation ul li.hovered a::after {
     content: '';
     position: absolute;
     right: 0;
@@ -93,11 +97,13 @@ body {
     border-radius: 50%;
     pointer-events: none;
 }
-.navigation ul li:hover a::before {
+.navigation ul li:hover a::before,
+.navigation ul li.hovered a::before{
     top: -50px;
     box-shadow: 35px 35px 0 10px var(--white);
 }
-.navigation ul li:hover a::after {
+.navigation ul li:hover a::after,
+.navigation ul li.hovered a::after {
     bottom: -50px;
     box-shadow: 35px -35px 0 10px var(--white);
 
