@@ -229,3 +229,86 @@ body {
 .card-box .card:hover .card-icon {
     color: var(--white);
 }
+
+/* details */
+.details {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    margin-top: 10px;
+}
+
+/* recent-orders */
+.recent-orders {
+    position: relative;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+.recent-orders .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.recent-orders .header h2 {
+    font-weight: 600;
+    color: var(--blue);
+}
+.btn {
+    position: relative;
+    padding: 5px 10px;
+    background: var(--blue);
+    text-decoration: none;
+    color: var(--white);
+    border-radius: 6px;
+}
+.recent-orders table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+.recent-orders table thead td {
+    font-weight: 600;
+}
+.recent-orders table tr {
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.recent-orders table tr:last-child {
+    border-bottom: none;
+}
+.recent-orders table tbody tr:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+.recent-orders table tr td {
+    padding: 10px;
+}
+.recent-orders table tr td:last-child,
+.recent-orders table tr td:nth-child(2) {
+    text-align: end;
+}
+.recent-orders table tr td:nth-child(3) {
+    text-align: center;
+}
+.status {
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--white);
+}
+.status.delivered {
+    background: #8de02c;
+}
+.status.pending {
+    background: #f9ca3f;
+}.status.return {
+     background: #f00;
+ }
+.status.in-progress {
+    background: #1795ce;
+}
