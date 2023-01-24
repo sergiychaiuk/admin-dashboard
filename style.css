@@ -125,6 +125,7 @@ body {
     width: calc(100% - 80px);
     left: 80px;
 }
+
 /* top-bar */
 .top-bar {
     width: 100%;
@@ -183,4 +184,48 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* card box */
+.card-box {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+/* card */
+.card-box .card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+.card-box .card:hover {
+    background: var(--blue);
+}
+.card-box .card .card-number {
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5em;
+    color: var(--blue);
+}
+.card-box .card .card-name {
+    margin-top: 5px;
+    font-size: 1.1em;
+    color: var(--black2);
+}
+.card-box .card .card-icon {
+    font-size: 3.5em;
+    color: var(--black2);
+}
+.card-box .card:hover .card-number,
+.card-box .card:hover .card-name,
+.card-box .card:hover .card-icon {
+    color: var(--white);
 }
